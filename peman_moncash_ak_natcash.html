@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ht"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&amp;family=Sora:wght@600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131a;}body{overscroll-behavior-y:none;font-family:'Space Grotesk',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary": "#00363d", "error": "#ffb4ab", "surface-dim": "#10131a", "background": "#10131a", "on-tertiary-fixed-variant": "#004395", "on-tertiary": "#002e6a", "tertiary-container": "#bdd0ff", "inverse-primary": "#006875", "tertiary-fixed-dim": "#aec6ff", "secondary-container": "#feb700", "primary-fixed-dim": "#00daf3", "surface-container-low": "#191c22", "surface-tint": "#00daf3", "error-container": "#93000a", "tertiary": "#e7ecff", "on-primary-fixed": "#001f24", "inverse-on-surface": "#2e3037", "inverse-surface": "#e1e2eb", "on-secondary-fixed-variant": "#5e4200", "on-tertiary-fixed": "#001a42", "on-surface-variant": "#bac9cc", "primary": "#c3f5ff", "surface-container-lowest": "#0b0e14", "surface": "#10131a", "surface-container-highest": "#32353c", "outline": "#849396", "surface-container": "#1d2026", "secondary-fixed": "#ffdea8", "on-secondary": "#412d00", "surface-bright": "#363940", "on-error": "#690005", "on-secondary-container": "#6b4b00", "surface-container-high": "#272a31", "secondary-fixed-dim": "#ffba20", "on-primary-container": "#00626e", "on-secondary-fixed": "#271900", "on-surface": "#e1e2eb", "outline-variant": "#3b494c", "secondary": "#ffdb9d", "primary-fixed": "#9cf0ff", "tertiary-fixed": "#d8e2ff", "on-background": "#e1e2eb", "on-primary-fixed-variant": "#004f58", "surface-variant": "#32353c", "on-error-container": "#ffdad6", "primary-container": "#00e5ff", "on-tertiary-container": "#0055b8" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.5rem", "space-xl": "2rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xs": "0.25rem" }, fontFamily: { "headline-md": ["Sora"], "label-code": ["JetBrains Mono"], "label-badge": ["Sora"], "headline-lg": ["Sora"], "label-numeric": ["JetBrains Mono"], "display-hero": ["Sora"], "headline-sm": ["Sora"], "body-md": ["Space Grotesk"], "body-lg": ["Space Grotesk"], "display-hero-mobile": ["Sora"], "body-sm": ["Space Grotesk"] }, fontSize: { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "label-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-hero-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Tounen" class="min-h-[44px] min-w-[44px] -ml-1 p-2 flex items-center justify-center rounded-xl bg-surface-container-high/90 text-on-surface hover:text-primary-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back_ios_new</span></button><img alt="Mikenson Top Up FF Logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI-txL9QgwxWoWpdQKgm3wwBd69pVmli2X_dslH2H0ifQHXPK25LTdbPVMTeos_JZoFuhWg5iL6SpaMfeRsjOlaTlxqd1qsL_0Tpx0HKto7ZKJeCpfsQmP3ztaeAYZmaf0LfvEvRRgUaU4Nt11Vl1WnllYOgU82apXNwqnOM49sV2AvkT7zJaUFUciRI_rhQz0y3Rzn9cXfqwf8y7XoRgNkyzyXHpH63RIgYwaDRUK"/><div class="flex flex-col min-w-0 justify-center"><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-none">Payment Checkout</h1><span class="font-label-badge text-label-badge text-primary-container truncate tracking-wider leading-none mt-0.5">SEKIRIZE</span></div></div><div class="flex items-center gap-1.5 shrink-0"><a aria-label="WhatsApp Support" class="min-h-[44px] min-w-[44px] p-2 flex items-center justify-center rounded-xl bg-surface-container-high/90 text-primary-container hover:text-primary transition-colors" href="https://wa.me/50955110880" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)]">chat</span></a><div class="min-h-[44px] min-w-[44px] p-1 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_10px_rgba(0,229,255,0.35)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6nB4ZY7b8EXQ6fnoeM0-UVt4NlxK4VXGDYIJkqnkM3ZAtS_LrGOlJyvZDCGTFny_TKZF3TfW3iUzF-X12vrw_XN8Q3ylX-eUuFtRlMXqmawf9khlg0wIYqz9OW7iJrhos8iDjXkrncXBnZ-9SC4Pn7bwSg4AbFB9cBjQfLa8B3s5Z4AgdT0849DN5Bo6n5F-vmFbUDDl3lEcatedX6kuo0IJldb1uS6dQ641SwXV1"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface max-w-md mx-auto"><div class="flex flex-col w-full pb-10 px-margin-mobile gap-y-4">
+<!-- Glow Backdrop Ambient Effect -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 w-80 h-36 bg-primary-container/10 blur-[80px] pointer-events-none -z-10 rounded-full"></div>
+<!-- ORDER SUMMARY CARD (Tactical Receipt) -->
+<section class="relative mt-2 p-4 rounded-xl bg-surface-container-high shadow-xl overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-32 h-32 bg-primary-container/5 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Header status strip -->
+<div class="flex items-center justify-between gap-2 pb-3">
+<div class="flex items-center gap-1.5">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary-container"></span>
+</span>
+<span class="font-label-badge text-label-badge text-secondary uppercase tracking-wider">AP TANN PEMAN</span>
+</div>
+<span class="font-label-code text-label-code px-2 py-0.5 rounded-lg bg-surface-container-lowest text-on-surface-variant font-medium">#ORD-9428</span>
+</div>
+<!-- Item & Diamond specs -->
+<div class="flex items-center gap-3 py-2 bg-surface-container-lowest/80 p-3 rounded-lg">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[28px] text-primary-container drop-shadow-[0_0_8px_rgba(0,229,255,0.7)]" style="font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">530 Dyaman Free Fire</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-bold">+53 Bonis</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">UID Jwè:</span>
+<span class="font-label-code text-label-code text-primary-fixed-dim bg-surface-container-high px-1.5 py-0.2 rounded font-semibold tracking-wider">2984102948</span>
+</div>
+</div>
+</div>
+<!-- Price Breakdown Strip -->
+<div class="mt-3 pt-2 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Montan Egzat Pou Peye</span>
+<span class="font-label-code text-label-code text-primary-container text-[11px]">Frè sèvis: 0 HTG</span>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg text-primary-container drop-shadow-[0_0_12px_rgba(0,229,255,0.4)]">750 <span class="font-body-sm text-body-sm text-on-surface font-medium">HTG</span></span>
+</div>
+</div>
+</section>
+<!-- WORKFLOW LIFECYCLE TRACKER -->
+<section class="bg-surface-container-low p-3 rounded-xl shadow-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-badge text-label-badge text-on-surface-variant tracking-wider uppercase">ETAP TRANSAKSYON AN</span>
+<span class="font-label-code text-label-code text-primary-fixed-dim">Etap 1 sou 4</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 relative">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center p-1.5 rounded-lg bg-surface-container-high">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center mb-1 shadow-sm">
+<span class="material-symbols-outlined text-[15px]">hourglass_top</span>
+</div>
+<span class="font-label-badge text-label-badge text-secondary font-bold leading-tight">En attente</span>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center p-1.5 rounded-lg bg-surface-container-lowest/60 opacity-70">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[15px]">fact_check</span>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant leading-tight">Vérification</span>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center p-1.5 rounded-lg bg-surface-container-lowest/60 opacity-70">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[15px]">payments</span>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant leading-tight">Payée</span>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center p-1.5 rounded-lg bg-surface-container-lowest/60 opacity-70">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant leading-tight">Terminée</span>
+</div>
+</div>
+</section>
+<!-- PAYMENT METHODS TAB SELECTION -->
+<section class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Chwazi Mwayen Peman</span>
+<span class="font-label-badge text-label-badge text-primary-container uppercase">Transfè Dirèk</span>
+</div>
+<!-- Toggle Selector Cards -->
+<div class="grid grid-cols-2 gap-2.5">
+<!-- MonCash Button -->
+<button class="relative p-3 rounded-xl bg-surface-container-high text-left flex flex-col justify-between transition-all duration-200 shadow-md" id="tab-moncash" onclick="switchMethod('moncash')" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-badge text-label-badge text-error uppercase font-extrabold tracking-wider">DIGICEL</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]" id="badge-moncash-check">radio_button_checked</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-1">MonCash</div>
+<span class="font-label-code text-label-code text-primary-container font-semibold mt-0.5">4419 5603</span>
+</button>
+<!-- NatCash Button -->
+<button class="relative p-3 rounded-xl bg-surface-container-low text-left flex flex-col justify-between transition-all duration-200 opacity-60" id="tab-natcash" onclick="switchMethod('natcash')" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-badge text-label-badge text-secondary-container uppercase font-extrabold tracking-wider">NATCOM</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]" id="badge-natcash-check">radio_button_unchecked</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-1">NatCash</div>
+<span class="font-label-code text-label-code text-on-surface-variant font-semibold mt-0.5">5511 0880</span>
+</button>
+</div>
+<!-- CARRIER INSTRUCTIONS PANEL -->
+<div class="p-4 rounded-xl bg-surface-container-high shadow-lg">
+<!-- MonCash Content -->
+<div class="flex flex-col gap-3" id="panel-moncash">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Nimewo MonCash Ofisyèl</span>
+<span class="font-label-numeric text-label-numeric text-primary-container font-bold text-[16px] tracking-wider">+509 4419 5603</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Mikenson Top Up</span>
+</div>
+<button class="px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary-container flex items-center gap-1 font-label-badge text-label-badge active:scale-95 transition-all" onclick="copyNumber('44195603', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>KOPYE</span>
+</button>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-badge text-label-badge text-secondary tracking-wider uppercase">ENSTRIKSYON ETAP PA ETAP:</span>
+<div class="flex items-start gap-2.5 text-body-sm text-on-surface">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest text-primary-container font-label-code text-label-code flex items-center justify-center shrink-0 mt-0.5">1</span>
+<span>Ouvri aplikasyon <strong>MonCash</strong> ou oswa tape <span class="font-label-code text-label-code text-primary">*202#</span></span>
+</div>
+<div class="flex items-start gap-2.5 text-body-sm text-on-surface">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest text-primary-container font-label-code text-label-code flex items-center justify-center shrink-0 mt-0.5">2</span>
+<span>Chwazi <strong>Voye Lajan</strong> epi tape nimewo <span class="font-label-code text-label-code text-primary-container font-bold">44195603</span></span>
+</div>
+<div class="flex items-start gap-2.5 text-body-sm text-on-surface">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest text-primary-container font-label-code text-label-code flex items-center justify-center shrink-0 mt-0.5">3</span>
+<span>Antre egzakteman <strong class="text-primary-container font-semibold">750 HTG</strong> epi mete kòd sekrè w</span>
+</div>
+<div class="flex items-start gap-2.5 text-body-sm text-on-surface">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest text-primary-container font-label-code text-label-code flex items-center justify-center shrink-0 mt-0.5">4</span>
+<span>Karyon kòd transaksyon an (TxID) sou SMS la oswa fè yon kaptir dekran (Screenshot)</span>
+</div>
+</div>
+</div>
+<!-- NatCash Content (Hidden by default) -->
+<div class="hidden flex flex-col gap-3" id="panel-natcash">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Nimewo NatCash Ofisyèl</span>
+<span class="font-label-numeric text-label-numeric text-secondary font-bold text-[16px] tracking-wider">+509 5511 0880</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Mikenson Top Up</span>
+</div>
+<button class="px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-secondary flex items-center gap-1 font-label-badge text-label-badge active:scale-95 transition-all" onclick="copyNumber('55110880', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>KOPYE</span>
+</button>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-badge text-label-badge text-secondary tracking-wider uppercase">ENSTRIKSYON ETAP PA ETAP:</span>
+<div class="flex items-start gap-2.5 text-body-sm text-on-surface">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest text-secondary font-label-code text-label-code flex items-center justify-center shrink-0 mt-0.5">1</span>
+<span>Ouvri aplikasyon <strong>NatCash</strong> ou oswa tape <span class="font-label-code text-label-code text-secondary">*202#</span></span>
+</div>
+<div class="flex items-start gap-2.5 text-body-sm text-on-surface">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest text-secondary font-label-code text-label-code flex items-center justify-center shrink-0 mt-0.5">2</span>
+<span>Chwazi <strong>Transfè Lajan</strong> epi tape <span class="font-label-code text-label-code text-secondary font-bold">55110880</span></span>
+</div>
+<div class="flex items-start gap-2.5 text-body-sm text-on-surface">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest text-secondary font-label-code text-label-code flex items-center justify-center shrink-0 mt-0.5">3</span>
+<span>Mete montan <strong class="text-secondary font-semibold">750 HTG</strong> epi konfime avèk kòd ou</span>
+</div>
+<div class="flex items-start gap-2.5 text-body-sm text-on-surface">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest text-secondary font-label-code text-label-code flex items-center justify-center shrink-0 mt-0.5">4</span>
+<span>Kole nimewo transaksyon an oswa resi a nan fòmilè anba a</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONFIRMATION FORM -->
+<section class="flex flex-col gap-3 p-4 rounded-xl bg-surface-container shadow-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">assignment_turned_in</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Fòmilè Konfimasyon Peman</h2>
+</div>
+<!-- Active selected indicator badge -->
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Metòd Chwazi:</span>
+<span class="font-label-badge text-label-badge text-primary-container uppercase font-bold" id="selected-method-label">MONCASH (DIGICEL)</span>
+</div>
+<!-- Phone input -->
+<div class="flex flex-col gap-1">
+<label class="font-body-sm text-body-sm text-on-surface font-medium" for="sender-phone">Nimewo Telefòn Ki Voye Lajan An</label>
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-2.5 focus-within:ring-0">
+<span class="font-label-code text-label-code text-on-surface-variant mr-2">+509</span>
+<input class="bg-transparent font-label-numeric text-label-numeric text-on-surface w-full focus:outline-none placeholder:text-outline" id="sender-phone" placeholder="Ex: 4812-3456" type="tel"/>
+</div>
+</div>
+<!-- Transaction Code (TxID) input -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<label class="font-body-sm text-body-sm text-on-surface font-medium" for="txid">Nimewo / Kòd Transaksyon (ID Transaction)</label>
+<button class="font-label-badge text-label-badge text-primary-container hover:underline" onclick="pasteTxID()" type="button">KOLE</button>
+</div>
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-2.5">
+<span class="material-symbols-outlined text-[18px] text-outline mr-2">tag</span>
+<input class="bg-transparent font-label-code text-label-code text-on-surface w-full focus:outline-none uppercase placeholder:text-outline" id="txid" placeholder="Ex: 11094829038 oswa 849202" type="text"/>
+</div>
+</div>
+<!-- Upload Receipt Screen -->
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Upload Prèv Peman (Screenshot Resi a)</span>
+<label class="flex flex-col items-center justify-center p-4 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container-high transition-colors text-center group" for="file-upload">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary-container group-hover:scale-105 transition-transform mb-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">add_photo_alternate</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium" id="file-label">Klike pou chwazi foto resi a</span>
+<span class="font-label-code text-label-code text-outline text-[11px] mt-0.5">PNG, JPG oswa JPEG (Max 5MB)</span>
+<input accept="image/*" class="hidden" id="file-upload" onchange="handleFileSelected(event)" type="file"/>
+</label>
+</div>
+<!-- Security & Anti-Fraud Notice -->
+<div class="p-3 rounded-lg bg-surface-container-lowest flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">shield</span>
+<div class="flex flex-col text-left">
+<span class="font-label-badge text-label-badge text-secondary uppercase font-bold">RÈGLEMAN SEKIRITE</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed text-[11px] mt-0.5">
+          Pa janm gen validasyon otomatik san verifikasyon ajan. Nou <strong>pa janm mande PIN</strong> MonCash/NatCash oswa modpas kont ou.
+        </p>
+</div>
+</div>
+<!-- Main Submit Action Button -->
+<button class="w-full mt-2 py-3.5 px-4 rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-[0_0_20px_rgba(0,229,255,0.4)]" onclick="submitProof()" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Voye Prèv Peman Pou Verifikasyon</span>
+</button>
+<!-- Instant Support Link -->
+<a class="w-full py-2.5 px-4 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center gap-2 font-headline-sm text-headline-sm hover:text-primary-container active:scale-95 transition-all text-center" href="https://wa.me/50955110880" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary-container text-[18px]">support_agent</span>
+<span class="text-body-md text-on-surface font-medium">Èd Imedya WhatsApp (+509 5511-0880)</span>
+</a>
+</section>
+</div>
+<script>
+  let currentMethod = 'moncash';
+
+  function switchMethod(method) {
+    currentMethod = method;
+    const tabMoncash = document.getElementById('tab-moncash');
+    const tabNatcash = document.getElementById('tab-natcash');
+    const panelMoncash = document.getElementById('panel-moncash');
+    const panelNatcash = document.getElementById('panel-natcash');
+    const badgeMoncashCheck = document.getElementById('badge-moncash-check');
+    const badgeNatcashCheck = document.getElementById('badge-natcash-check');
+    const selectedLabel = document.getElementById('selected-method-label');
+
+    if (method === 'moncash') {
+      tabMoncash.classList.replace('opacity-60', 'opacity-100');
+      tabMoncash.classList.replace('bg-surface-container-low', 'bg-surface-container-high');
+      tabNatcash.classList.replace('opacity-100', 'opacity-60');
+      tabNatcash.classList.replace('bg-surface-container-high', 'bg-surface-container-low');
+
+      badgeMoncashCheck.innerText = 'radio_button_checked';
+      badgeMoncashCheck.classList.replace('text-on-surface-variant', 'text-primary-container');
+      badgeNatcashCheck.innerText = 'radio_button_unchecked';
+      badgeNatcashCheck.classList.replace('text-secondary-container', 'text-on-surface-variant');
+
+      panelMoncash.classList.remove('hidden');
+      panelNatcash.classList.add('hidden');
+
+      selectedLabel.innerText = 'MONCASH (DIGICEL)';
+      selectedLabel.className = 'font-label-badge text-label-badge text-primary-container uppercase font-bold';
+    } else {
+      tabNatcash.classList.replace('opacity-60', 'opacity-100');
+      tabNatcash.classList.replace('bg-surface-container-low', 'bg-surface-container-high');
+      tabMoncash.classList.replace('opacity-100', 'opacity-60');
+      tabMoncash.classList.replace('bg-surface-container-high', 'bg-surface-container-low');
+
+      badgeNatcashCheck.innerText = 'radio_button_checked';
+      badgeNatcashCheck.classList.replace('text-on-surface-variant', 'text-secondary-container');
+      badgeMoncashCheck.innerText = 'radio_button_unchecked';
+      badgeMoncashCheck.classList.replace('text-primary-container', 'text-on-surface-variant');
+
+      panelNatcash.classList.remove('hidden');
+      panelMoncash.classList.add('hidden');
+
+      selectedLabel.innerText = 'NATCASH (NATCOM)';
+      selectedLabel.className = 'font-label-badge text-label-badge text-secondary uppercase font-bold';
+    }
+  }
+
+  function copyNumber(num, btn) {
+    navigator.clipboard.writeText(num).then(() => {
+      const originalHTML = btn.innerHTML;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px] text-primary-container">done</span><span class="text-primary-container">KOPYE!</span>`;
+      setTimeout(() => {
+        btn.innerHTML = originalHTML;
+      }, 2000);
+    }).catch(() => {
+      prompt("Kopye nimewo a:", num);
+    });
+  }
+
+  async function pasteTxID() {
+    try {
+      const text = await navigator.clipboard.readText();
+      if (text) {
+        document.getElementById('txid').value = text.trim();
+      }
+    } catch (err) {
+      document.getElementById('txid').focus();
+    }
+  }
+
+  function handleFileSelected(event) {
+    const file = event.target.files[0];
+    const label = document.getElementById('file-label');
+    if (file) {
+      label.innerText = 'Fichye Chwazi: ' + file.name;
+      label.classList.add('text-primary-container');
+    }
+  }
+
+  function submitProof() {
+    const phone = document.getElementById('sender-phone').value.trim();
+    const txid = document.getElementById('txid').value.trim();
+
+    if (!phone || !txid) {
+      alert("Tanpri antre nimewo telefòn ou ansanm ak kòd transaksyon (TxID) an avan ou voye prèv la.");
+      return;
+    }
+
+    const message = `Halo Mikenson Top Up, mwen voye peman 750 HTG pou 530 Dyaman (UID: 2984102948) sou ${currentMethod.toUpperCase()}.\nNimewo Mwen: +509 ${phone}\nTxID: ${txid}`;
+    const waUrl = `https://wa.me/50955110880?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank');
+  }
+</script></main></body></html>

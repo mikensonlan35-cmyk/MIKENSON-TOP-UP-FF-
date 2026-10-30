@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ht"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&amp;family=Sora:wght@600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131a;}body{overscroll-behavior-y:none;font-family:'Space Grotesk',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary": "#00363d", "error": "#ffb4ab", "surface-dim": "#10131a", "background": "#10131a", "on-tertiary-fixed-variant": "#004395", "on-tertiary": "#002e6a", "tertiary-container": "#bdd0ff", "inverse-primary": "#006875", "tertiary-fixed-dim": "#aec6ff", "secondary-container": "#feb700", "primary-fixed-dim": "#00daf3", "surface-container-low": "#191c22", "surface-tint": "#00daf3", "error-container": "#93000a", "tertiary": "#e7ecff", "on-primary-fixed": "#001f24", "inverse-on-surface": "#2e3037", "inverse-surface": "#e1e2eb", "on-secondary-fixed-variant": "#5e4200", "on-tertiary-fixed": "#001a42", "on-surface-variant": "#bac9cc", "primary": "#c3f5ff", "surface-container-lowest": "#0b0e14", "surface": "#10131a", "surface-container-highest": "#32353c", "outline": "#849396", "surface-container": "#1d2026", "secondary-fixed": "#ffdea8", "on-secondary": "#412d00", "surface-bright": "#363940", "on-error": "#690005", "on-secondary-container": "#6b4b00", "surface-container-high": "#272a31", "secondary-fixed-dim": "#ffba20", "on-primary-container": "#00626e", "on-secondary-fixed": "#271900", "on-surface": "#e1e2eb", "outline-variant": "#3b494c", "secondary": "#ffdb9d", "primary-fixed": "#9cf0ff", "tertiary-fixed": "#d8e2ff", "on-background": "#e1e2eb", "on-primary-fixed-variant": "#004f58", "surface-variant": "#32353c", "on-error-container": "#ffdad6", "primary-container": "#00e5ff", "on-tertiary-container": "#0055b8" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.5rem", "space-xl": "2rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xs": "0.25rem" }, fontFamily: { "headline-md": ["Sora"], "label-code": ["JetBrains Mono"], "label-badge": ["Sora"], "headline-lg": ["Sora"], "label-numeric": ["JetBrains Mono"], "display-hero": ["Sora"], "headline-sm": ["Sora"], "body-md": ["Space Grotesk"], "body-lg": ["Space Grotesk"], "display-hero-mobile": ["Sora"], "body-sm": ["Space Grotesk"] }, fontSize: { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "label-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-hero-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><img alt="Mikenson Top Up FF Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI-txL9QgwxWoWpdQKgm3wwBd69pVmli2X_dslH2H0ifQHXPK25LTdbPVMTeos_JZoFuhWg5iL6SpaMfeRsjOlaTlxqd1qsL_0Tpx0HKto7ZKJeCpfsQmP3ztaeAYZmaf0LfvEvRRgUaU4Nt11Vl1WnllYOgU82apXNwqnOM49sV2AvkT7zJaUFUciRI_rhQz0y3Rzn9cXfqwf8y7XoRgNkyzyXHpH63RIgYwaDRUK"/><div class="flex flex-col min-w-0 justify-center"><div class="flex items-center gap-1 min-w-0"><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight truncate leading-none drop-shadow-[0_0_10px_rgba(0,229,255,0.4)]">MIKENSON</span><span class="font-headline-sm text-headline-sm text-secondary-container tracking-tight shrink-0 leading-none">FF</span></div><span class="font-label-badge text-label-badge text-on-surface-variant truncate tracking-wider leading-none mt-0.5">Home Free Fire</span></div></div><div class="flex items-center gap-1.5 shrink-0"><a aria-label="WhatsApp Support" class="min-h-[44px] min-w-[44px] p-2 flex items-center justify-center rounded-xl bg-surface-container-high/90 text-primary-container hover:text-primary transition-colors" href="https://wa.me/50955110880" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)]">chat</span></a><div class="inline-flex items-center bg-surface-container-high p-0.5 rounded-lg"><button class="min-h-[44px] px-2 flex items-center justify-center font-label-badge text-label-badge rounded-lg bg-primary-container text-on-primary font-bold shadow-[0_0_8px_rgba(0,229,255,0.4)] transition-all" type="button">HT</button><button class="min-h-[44px] px-2 flex items-center justify-center font-label-badge text-label-badge rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">FR</button></div><a aria-label="Itilizatè Pwofil" class="min-h-[44px] min-w-[44px] p-1 flex items-center justify-center rounded-full" data-path="admin-dashboard" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_10px_rgba(0,229,255,0.35)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6nB4ZY7b8EXQ6fnoeM0-UVt4NlxK4VXGDYIJkqnkM3ZAtS_LrGOlJyvZDCGTFny_TKZF3TfW3iUzF-X12vrw_XN8Q3ylX-eUuFtRlMXqmawf9khlg0wIYqz9OW7iJrhos8iDjXkrncXBnZ-9SC4Pn7bwSg4AbFB9cBjQfLa8B3s5Z4AgdT0849DN5Bo6n5F-vmFbUDDl3lEcatedX6kuo0IJldb1uS6dQ641SwXV1"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface max-w-md mx-auto"><div class="flex flex-col w-full pb-8 space-y-4">
+<!-- Live Feed Dynamic Ticker -->
+<div class="px-gutter-mobile">
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded-xl shadow-md overflow-hidden">
+<div class="flex items-center gap-1.5 shrink-0 bg-primary-container/15 px-2 py-0.5 rounded-full">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-badge text-label-badge text-primary-container uppercase tracking-wider">An Dirèk</span>
+</div>
+<div class="overflow-hidden relative w-full h-5">
+<div class="flex flex-col transition-transform duration-700 ease-out" id="ticker-slider">
+<div class="h-5 flex items-center gap-1 text-on-surface text-body-sm font-label-code truncate">
+<span class="text-secondary font-bold">UID 2849****</span> resevwa <span class="text-primary font-bold">520 Dyaman</span> (MonCash)
+          </div>
+<div class="h-5 flex items-center gap-1 text-on-surface text-body-sm font-label-code truncate">
+<span class="text-secondary font-bold">UID 1983****</span> resevwa <span class="text-primary font-bold">Kat Merù $25</span> (NatCash)
+          </div>
+<div class="h-5 flex items-center gap-1 text-on-surface text-body-sm font-label-code truncate">
+<span class="text-secondary font-bold">UID 7410****</span> aktive <span class="text-secondary-fixed font-bold">Weekly VIP</span> (MonCash)
+          </div>
+<div class="h-5 flex items-center gap-1 text-on-surface text-body-sm font-label-code truncate">
+<span class="text-secondary font-bold">UID 3099****</span> resevwa <span class="text-primary font-bold">1,060 Dyaman</span> (NatCash)
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Visual Stage: Esports Cyber Glory -->
+<div class="px-gutter-mobile">
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-high shadow-2xl p-4 flex flex-col justify-between">
+<!-- Background Cyber Atmosphere Image -->
+<div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-screen pointer-events-none" data-alt="Futuristic cyber-sports arena with glowing electric cyan hexagonal grid patterns, neon golden embers floating in midnight blue darkness, energetic esports tournament backdrop tailored for competitive Free Fire gaming in high contrast" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCerlnNOB77ZZy79mXuM7kp7B-DmkT32O-ixm132andic9OWiBuIYLQf_9bOlixOOmXVf-JszfUGmdp3uJ9RZaGfWjsxFeycpSkC7v-_O1RNKGWjC8svTm4Vbh2j194IAeDEwQOa8HzSGtgqCEcFTYvk47laKkQx4Bg9Dx4CWA6zHm5ya6iUGyQUJsywfqJY7XJlN7z3vNfsiLQuBETuIPaE9cB6lKOvkYI_mqJnVf')">
+</div>
+<!-- Radial energy gradient overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent pointer-events-none"></div>
+<!-- Hero Header & Badges -->
+<div class="relative z-10 flex items-start justify-between gap-2 mb-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-badge text-label-badge shadow-[0_0_12px_rgba(0,229,255,0.4)]">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          OFISYÈL &amp; RAPID AYITI
+        </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary font-label-code text-label-code">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+          5-15 MIN
+        </span>
+</div>
+<!-- Mascot & Shield Logo Spotlight -->
+<div class="relative z-10 flex items-center gap-3.5 my-1">
+<div class="relative shrink-0 w-16 h-16 rounded-xl bg-surface-container-lowest p-1 shadow-[0_0_20px_rgba(0,229,255,0.35)] flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Epic esports shield emblem with electric blue wings, glowing diamond crystal in center, cyber gold trim armor plating, and glowing particle sparks against deep dark obsidian metallic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNUTe8Qpg_Pi_s0uVwY9xZuzsTjcAIR5xUvY_AN0-61GL_Z7li6P5Rt6OpD61pXVe0CPY16OHm2Tp2g1_Xu3vecS4L10Lr3kRi-WAujJFyGTMpmL8fqN83phy9jATIAs6IUSvxV9pXBYxdIXCWCVLoCAZtXtD2wLUF3tgSLc-Pz_IZj-qCFTNpXWRSzoF8dVBIQf4kt4WKn9P_8mgXJSEqNZuod-9GUs4ieh7FrcDv"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-display-hero-mobile text-display-hero-mobile text-primary tracking-tight leading-none drop-shadow-[0_0_12px_rgba(0,229,255,0.35)]">
+            TOP UP FF
+          </h2>
+<p class="font-headline-sm text-headline-sm text-secondary-fixed mt-0.5">
+            Dyaman Imedya Ayiti
+          </p>
+</div>
+</div>
+<!-- Trust Pitch Description -->
+<div class="relative z-10 mt-3 pt-3 bg-surface-container-lowest/80 backdrop-blur-md rounded-xl p-3 shadow-inner">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+          Rechaje kont <span class="text-primary font-bold">Free Fire</span> ou san kouri risk! Peman 100% lokal ak <span class="text-secondary font-bold">MonCash</span> &amp; <span class="text-primary-fixed-dim font-bold">NatCash</span>.
+        </p>
+<div class="mt-2.5 flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary-container/20 text-secondary-container">
+<span class="material-symbols-outlined text-[16px]">format_image_left</span>
+</span>
+<span class="font-label-code text-label-code text-on-surface-variant">
+            UID sèlman — Nou PA janm mande modpas!
+          </span>
+</div>
+</div>
+<!-- Primary Tactical Action Buttons -->
+<div class="relative z-10 mt-4 flex flex-col gap-2">
+<a class="w-full py-3.5 px-4 rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm text-center flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,229,255,0.45)] active:scale-95 transition-transform" data-path="diamond-store" href="#">
+<span class="material-symbols-outlined text-[20px]">diamond</span>
+          Achte Dyaman Kounye a
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Fast Auth / Account Bar -->
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 px-1 rounded-lg bg-surface-container text-primary font-label-badge text-label-badge flex items-center justify-center gap-1 active:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">login</span>
+            Konekte
+          </button>
+<button class="py-2 px-1 rounded-lg bg-surface-container text-on-surface font-label-badge text-label-badge flex items-center justify-center gap-1 active:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">person_add</span>
+            Kreye Kont
+          </button>
+<a class="py-2 px-1 rounded-lg bg-surface-container text-secondary font-label-badge text-label-badge flex items-center justify-center gap-1 active:bg-surface-bright transition-colors" data-path="admin-dashboard" href="#">
+<span class="material-symbols-outlined text-[15px]">account_circle</span>
+            Pwofil
+          </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bon Plan & Pake Espesyal (Hot Offers) -->
+<div class="px-gutter-mobile space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">local_fire_department</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+          Bon Plan Jodi a
+        </h3>
+</div>
+<span class="font-label-badge text-label-badge text-primary-container px-2 py-0.5 rounded-full bg-surface-container-high">
+        OFISYÈL
+      </span>
+</div>
+<!-- Cards Scroll / Grid -->
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Mega Starter Deal -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-3.5 shadow-lg flex items-center justify-between gap-3">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-primary-container/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-3 min-w-0">
+<div class="shrink-0 w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px] text-primary-container">diamond</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">100 + 10 Dyaman</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary">+10 BONIS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+              Pi bon kontra depa pou jwè Ayisyen
+            </p>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<span class="block font-label-numeric text-headline-sm text-secondary-container">150 HTG</span>
+<button class="mt-1 px-3 py-1 rounded-lg bg-primary-container text-on-primary font-label-badge text-label-badge shadow-[0_0_10px_rgba(0,229,255,0.3)] active:scale-95 transition-transform" type="button">
+            Chwazi
+          </button>
+</div>
+</div>
+<!-- Pass VIP Semèn & Mwa Dual Bento -->
+<div class="grid grid-cols-2 gap-2">
+<!-- Semèn VIP Card -->
+<div class="rounded-xl bg-surface-container-low p-3 shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary text-[22px]">calendar_view_week</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary">7 Jou</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1.5">Pake Semèn</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+              Weekly VIP Pass ak bonis chak maten
+            </p>
+</div>
+<div class="mt-3 pt-2">
+<span class="block font-label-numeric text-label-numeric text-secondary font-bold">295 HTG</span>
+<button class="w-full mt-1.5 py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-badge text-label-badge hover:bg-primary-container hover:text-on-primary transition-colors" type="button">
+              Pran Pas la
+            </button>
+</div>
+</div>
+<!-- Mwa VIP Card -->
+<div class="rounded-xl bg-surface-container-low p-3 shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -top-3 -right-3 w-12 h-12 bg-secondary-container/20 rounded-full blur-md pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">workspace_premium</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary">30 Jou</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1.5">Pake Mwa VIP</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+              Monthly Pass pou elit Free Fire
+            </p>
+</div>
+<div class="mt-3 pt-2">
+<span class="block font-label-numeric text-label-numeric text-secondary-container font-bold">1,250 HTG</span>
+<button class="w-full mt-1.5 py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-badge text-label-badge hover:bg-secondary-container hover:text-on-secondary transition-colors" type="button">
+              Pran Pas la
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sèvis Disponib Kout Je (Services Grid) -->
+<div class="px-gutter-mobile space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[20px]">hub</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+          Tout Sèvis Disponib
+        </h3>
+</div>
+<a class="font-label-badge text-label-badge text-primary-container flex items-center gap-0.5" data-path="extra-services" href="#">
+        Wè tout <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Sèvis 1: Dyaman FF -->
+<a class="block rounded-xl bg-surface-container p-3 shadow-md active:scale-95 transition-transform" data-path="diamond-store" href="#">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container mb-2">
+<span class="material-symbols-outlined text-[24px]">diamond</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Dyaman Free Fire</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Livrezon 5-15 minit dirèk sou kont</p>
+<span class="inline-block mt-2 font-label-code text-label-code text-primary">Kòmanse nan 150 HTG</span>
+</a>
+<!-- Sèvis 2: Kat Merù -->
+<a class="block rounded-xl bg-surface-container p-3 shadow-md active:scale-95 transition-transform" data-path="extra-services" href="#">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary-container mb-2">
+<span class="material-symbols-outlined text-[24px]">credit_card</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Kat Merù Visa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Rechaj &amp; kreyasyon kat vityèl fasil</p>
+<span class="inline-block mt-2 font-label-code text-label-code text-secondary">Achte sou entènèt</span>
+</a>
+<!-- Sèvis 3: Netflix -->
+<a class="block rounded-xl bg-surface-container p-3 shadow-md active:scale-95 transition-transform" data-path="extra-services" href="#">
+<div class="w-10 h-10 rounded-lg bg-error-container/40 flex items-center justify-center text-error mb-2">
+<span class="material-symbols-outlined text-[24px]">movie</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Kont Netflix</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pwofil garanti ak PIN pèsonèl</p>
+<span class="inline-block mt-2 font-label-code text-label-code text-error">Ultra HD 4K</span>
+</a>
+<!-- Sèvis 4: Telegram -->
+<a class="block rounded-xl bg-surface-container p-3 shadow-md active:scale-95 transition-transform" data-path="extra-services" href="#">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/30 flex items-center justify-center text-on-tertiary-fixed mb-2">
+<span class="material-symbols-outlined text-[24px]">send</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Telegram Premium</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Abònman ofisyèl, badj zetwal &amp; vitès</p>
+<span class="inline-block mt-2 font-label-code text-label-code text-tertiary">3 &amp; 12 Mwa</span>
+</a>
+</div>
+</div>
+<!-- Sekirite & Metòd Peman Badge Panel -->
+<div class="px-gutter-mobile">
+<div class="rounded-xl bg-surface-container-low p-3.5 shadow-md space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">lock</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Garanti Sekirite Total</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Atansyon:</strong> Nou pa janm mande modpas kont Free Fire ou! Se sèlman <span class="text-primary font-bold">UID (Nimewo ID Jwè)</span> ou bezwen pou resevwa kado ak dyaman ou yo san danje.
+      </p>
+<!-- Carrier Logos Badges -->
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface flex items-center gap-1 font-label-badge text-label-badge">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+            MonCash
+          </div>
+<div class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface flex items-center gap-1 font-label-badge text-label-badge">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+            NatCash
+          </div>
+<div class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface flex items-center gap-1 font-label-badge text-label-badge">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            Merù
+          </div>
+</div>
+<span class="font-label-code text-label-code text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">encrypted</span> 256-bit SSL
+        </span>
+</div>
+</div>
+</div>
+<!-- Kontak Rapid / Asistans Kliyan -->
+<div class="px-gutter-mobile">
+<div class="rounded-xl bg-surface-container-high p-3.5 shadow-lg flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">support_agent</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Asistans 24/7 Ayiti</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ekip Mikenson toujou la pou reponn ou</p>
+</div>
+</div>
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_#00e5ff]"></span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="py-2.5 px-3 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center gap-1.5 font-label-badge text-label-badge shadow active:scale-95 transition-transform" href="https://wa.me/50955110880" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+          +509 5511 0880
+        </a>
+<a class="py-2.5 px-3 rounded-lg bg-surface-container-lowest text-on-surface flex items-center justify-center gap-1.5 font-label-badge text-label-badge shadow active:scale-95 transition-transform truncate" href="mailto:mikensonlan35@gmail.com">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+          Ekri Nou Imèl
+        </a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initTicker() {
+    const slider = document.getElementById('ticker-slider');
+    if (!slider) return;
+    let index = 0;
+    const totalItems = 4;
+    setInterval(() => {
+      index = (index + 1) % totalItems;
+      slider.style.transform = `translateY(-${index * 20}px)`;
+    }, 3200);
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-8px_24px_rgba(0,0,0,0.7)]" data-active-classes="text-primary-container font-bold [&amp;_span.material-symbols-outlined]:drop-shadow-[0_0_12px_rgba(0,229,255,0.85)] [&amp;_span.nav-indicator]:opacity-100"><div class="h-20 max-w-md mx-auto px-1 flex items-center justify-between"><a aria-current="page" class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center transition-colors text-primary-container font-bold [&amp;_span.material-symbols-outlined]:drop-shadow-[0_0_12px_rgba(0,229,255,0.85)] [&amp;_span.nav-indicator]:opacity-100" data-path="home-free-fire" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">sports_esports</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Akèy</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="diamond-store" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">diamond</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Pake Dyaman</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="extra-services" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">grid_view</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Sèvis Plis</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="order-tracking" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">receipt_long</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Kòmand Mwen</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="admin-dashboard" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">shield_person</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Admin</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a></div></nav></body></html>

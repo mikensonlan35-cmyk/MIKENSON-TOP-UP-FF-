@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ht"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&amp;family=Sora:wght@600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131a;}body{overscroll-behavior-y:none;font-family:'Space Grotesk',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary": "#00363d", "error": "#ffb4ab", "surface-dim": "#10131a", "background": "#10131a", "on-tertiary-fixed-variant": "#004395", "on-tertiary": "#002e6a", "tertiary-container": "#bdd0ff", "inverse-primary": "#006875", "tertiary-fixed-dim": "#aec6ff", "secondary-container": "#feb700", "primary-fixed-dim": "#00daf3", "surface-container-low": "#191c22", "surface-tint": "#00daf3", "error-container": "#93000a", "tertiary": "#e7ecff", "on-primary-fixed": "#001f24", "inverse-on-surface": "#2e3037", "inverse-surface": "#e1e2eb", "on-secondary-fixed-variant": "#5e4200", "on-tertiary-fixed": "#001a42", "on-surface-variant": "#bac9cc", "primary": "#c3f5ff", "surface-container-lowest": "#0b0e14", "surface": "#10131a", "surface-container-highest": "#32353c", "outline": "#849396", "surface-container": "#1d2026", "secondary-fixed": "#ffdea8", "on-secondary": "#412d00", "surface-bright": "#363940", "on-error": "#690005", "on-secondary-container": "#6b4b00", "surface-container-high": "#272a31", "secondary-fixed-dim": "#ffba20", "on-primary-container": "#00626e", "on-secondary-fixed": "#271900", "on-surface": "#e1e2eb", "outline-variant": "#3b494c", "secondary": "#ffdb9d", "primary-fixed": "#9cf0ff", "tertiary-fixed": "#d8e2ff", "on-background": "#e1e2eb", "on-primary-fixed-variant": "#004f58", "surface-variant": "#32353c", "on-error-container": "#ffdad6", "primary-container": "#00e5ff", "on-tertiary-container": "#0055b8" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.5rem", "space-xl": "2rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xs": "0.25rem" }, fontFamily: { "headline-md": ["Sora"], "label-code": ["JetBrains Mono"], "label-badge": ["Sora"], "headline-lg": ["Sora"], "label-numeric": ["JetBrains Mono"], "display-hero": ["Sora"], "headline-sm": ["Sora"], "body-md": ["Space Grotesk"], "body-lg": ["Space Grotesk"], "display-hero-mobile": ["Sora"], "body-sm": ["Space Grotesk"] }, fontSize: { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "label-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-hero-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><img alt="Mikenson Top Up FF Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI-txL9QgwxWoWpdQKgm3wwBd69pVmli2X_dslH2H0ifQHXPK25LTdbPVMTeos_JZoFuhWg5iL6SpaMfeRsjOlaTlxqd1qsL_0Tpx0HKto7ZKJeCpfsQmP3ztaeAYZmaf0LfvEvRRgUaU4Nt11Vl1WnllYOgU82apXNwqnOM49sV2AvkT7zJaUFUciRI_rhQz0y3Rzn9cXfqwf8y7XoRgNkyzyXHpH63RIgYwaDRUK"/><div class="flex flex-col min-w-0 justify-center"><div class="flex items-center gap-1 min-w-0"><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight truncate leading-none drop-shadow-[0_0_10px_rgba(0,229,255,0.4)]">MIKENSON</span><span class="font-headline-sm text-headline-sm text-secondary-container tracking-tight shrink-0 leading-none">FF</span></div><span class="font-label-badge text-label-badge text-on-surface-variant truncate tracking-wider leading-none mt-0.5">Admin Dashboard</span></div></div><div class="flex items-center gap-1.5 shrink-0"><a aria-label="WhatsApp Support" class="min-h-[44px] min-w-[44px] p-2 flex items-center justify-center rounded-xl bg-surface-container-high/90 text-primary-container hover:text-primary transition-colors" href="https://wa.me/50955110880" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)]">chat</span></a><div class="inline-flex items-center bg-surface-container-high p-0.5 rounded-lg"><button class="min-h-[44px] px-2 flex items-center justify-center font-label-badge text-label-badge rounded-lg bg-primary-container text-on-primary font-bold shadow-[0_0_8px_rgba(0,229,255,0.4)] transition-all" type="button">HT</button><button class="min-h-[44px] px-2 flex items-center justify-center font-label-badge text-label-badge rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">FR</button></div><a aria-label="Itilizatè Pwofil" class="min-h-[44px] min-w-[44px] p-1 flex items-center justify-center rounded-full" data-path="admin-dashboard" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_10px_rgba(0,229,255,0.35)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6nB4ZY7b8EXQ6fnoeM0-UVt4NlxK4VXGDYIJkqnkM3ZAtS_LrGOlJyvZDCGTFny_TKZF3TfW3iUzF-X12vrw_XN8Q3ylX-eUuFtRlMXqmawf9khlg0wIYqz9OW7iJrhos8iDjXkrncXBnZ-9SC4Pn7bwSg4AbFB9cBjQfLa8B3s5Z4AgdT0849DN5Bo6n5F-vmFbUDDl3lEcatedX6kuo0IJldb1uS6dQ641SwXV1"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface max-w-md mx-auto"><div class="flex flex-col w-full px-gutter-mobile space-y-space-md pb-12">
+<!-- Status Bar & Subheader Badge -->
+<div class="flex items-center justify-between bg-surface-container-high rounded-full px-space-sm py-space-xs mt-2 shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span class="font-label-badge text-label-badge text-primary-container uppercase tracking-wider">Aksè Rezève</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant font-label-code text-label-code">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">verified_user</span>
+<span>2FA Otantifye</span>
+</div>
+</div>
+<!-- Hero Status Console Banner -->
+<div class="relative overflow-hidden bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-lowest rounded-xl p-space-md shadow-xl">
+<div class="flex items-start justify-between relative z-10">
+<div class="flex flex-col min-w-0">
+<span class="font-label-badge text-label-badge text-secondary-container uppercase tracking-wider">Konsòl Siprèm FF</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Tablo Dòb Admin</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Kontwòl transaksyon an tan reyèl &amp; jesyon pri sistèm</p>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-code text-label-code bg-surface-container-highest px-2 py-1 rounded text-primary font-bold">ROOT #01</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] mt-1">v3.4.1 Kreyòl</span>
+</div>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[110px] text-primary-container">shield_with_house</span>
+</div>
+</div>
+<!-- Realtime KPI Metric Grid -->
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Card 1: Vant Jodi a -->
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-badge text-label-badge text-on-surface-variant">VANT JODI A</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]">payments</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight">42,500 <span class="font-label-code text-label-code text-primary-fixed-dim">HTG</span></div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-0.5">
+<span class="text-primary-container font-semibold">18</span> kòmand valide
+        </div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-container"></div>
+</div>
+<!-- Card 2: Dyaman Livwe -->
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-badge text-label-badge text-on-surface-variant">DYAMAN LIVWE</span>
+<span class="material-symbols-outlined text-secondary-container text-[18px]">diamond</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-secondary font-bold tracking-tight">34,200</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-0.5">
+<span class="text-secondary-container font-semibold">+8.4%</span> depi yè
+        </div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary-container"></div>
+</div>
+<!-- Card 3: Ap Tann Verifikasyon -->
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-badge text-label-badge text-on-surface-variant">AP TANN AKSIYON</span>
+<span class="material-symbols-outlined text-error text-[18px]">pending_actions</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-error font-bold tracking-tight">4 <span class="font-label-badge text-label-badge text-on-error-container bg-error-container px-1 py-0.5 rounded text-[10px]">Ijan</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-0.5">Resi pou revize</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-error"></div>
+</div>
+<!-- Card 4: Revni Total Mwa a -->
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-badge text-label-badge text-on-surface-variant">MWA AN KOURAN</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">account_balance_wallet</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-tertiary font-bold tracking-tight">418,900 <span class="font-label-code text-label-code text-tertiary-container">HTG</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-0.5">Objektif: 92% atenn</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-tertiary-container"></div>
+</div>
+</div>
+<!-- Operational Flow: Live Order Verification Queue -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">sync_alt</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Jesyon Kòmand &amp; Peman</h3>
+</div>
+<button class="flex items-center gap-1 font-label-badge text-label-badge text-primary-container bg-surface-container px-2 py-1 rounded hover:bg-surface-container-high transition-colors" id="refreshQueueBtn" type="button">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span>Rafrechi</span>
+</button>
+</div>
+<!-- Horizontal Category Filter Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1 no-scrollbar text-nowrap">
+<button class="filter-chip active-filter px-3 py-1.5 rounded-lg font-label-badge text-label-badge bg-primary-container text-on-primary font-bold shadow-sm transition-all" data-status="all" type="button">Tout (18)</button>
+<button class="filter-chip px-3 py-1.5 rounded-lg font-label-badge text-label-badge bg-surface-container-high text-on-surface-variant font-medium hover:text-on-surface transition-all" data-status="pending" type="button">Ap Tann (4)</button>
+<button class="filter-chip px-3 py-1.5 rounded-lg font-label-badge text-label-badge bg-surface-container-high text-on-surface-variant font-medium hover:text-on-surface transition-all" data-status="verifying" type="button">Nan Verifikasyon (2)</button>
+<button class="filter-chip px-3 py-1.5 rounded-lg font-label-badge text-label-badge bg-surface-container-high text-on-surface-variant font-medium hover:text-on-surface transition-all" data-status="paid" type="button">Peye (10)</button>
+<button class="filter-chip px-3 py-1.5 rounded-lg font-label-badge text-label-badge bg-surface-container-high text-on-surface-variant font-medium hover:text-on-surface transition-all" data-status="completed" type="button">Fini (1)</button>
+<button class="filter-chip px-3 py-1.5 rounded-lg font-label-badge text-label-badge bg-surface-container-high text-on-surface-variant font-medium hover:text-on-surface transition-all" data-status="rejected" type="button">Rejte (1)</button>
+</div>
+<!-- Order Item Card 1: FF Diamonds / MonCash -->
+<div class="order-card bg-surface-container p-space-sm rounded-xl shadow-md flex flex-col space-y-2 relative" data-order-status="pending">
+<!-- Order Header -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-code text-label-code text-primary font-bold">#MKT-8942</span>
+<span class="bg-error-container text-on-error-container font-label-badge text-label-badge text-[10px] px-1.5 py-0.5 rounded">Ap Tann</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-0.5">14:28:05 • Jodi a</span>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm text-secondary font-bold">750 HTG</div>
+<span class="font-label-badge text-label-badge text-primary-container text-[11px]">530 Dyaman</span>
+</div>
+</div>
+<!-- Order Details Grid -->
+<div class="bg-surface-container-high p-space-xs rounded-lg grid grid-cols-2 gap-2 text-left">
+<div>
+<span class="font-label-code text-label-code text-on-surface-variant block text-[10px]">UID FREE FIRE</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-code text-label-code text-on-surface font-semibold select-all">2849104812</span>
+<button class="text-on-surface-variant hover:text-primary-container" onclick="navigator.clipboard.writeText('2849104812')" title="Kopye UID" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+</div>
+<div>
+<span class="font-label-code text-label-code text-on-surface-variant block text-[10px]">MONCASH TXID</span>
+<span class="font-label-code text-label-code text-secondary-container font-semibold block truncate">MC-9028471</span>
+</div>
+</div>
+<!-- Attached Payment Proof (Resi) Compact Card -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-2 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-10 h-10 object-cover rounded shadow-sm shrink-0" data-alt="A smartphone screen displaying an authentic Digicel MonCash Haiti SMS payment confirmation voucher with 750 HTG and reference transaction code MC-9028471 in a clean dark modern mobile interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9FjOyii6j-A9BNNF547rc86OS7TzJ5-TZoAi8Yy_MRhYFWV6NuqR9vtwfVWO9Ngy_Z0b0iPI-AEw4pCfYvJrBANUEFsNyLFe807Hc2wxqtunzkI3Bbr0Jcq9xAmIXPYKxYTTob7aHiUt9ZTaxzv2IJKka67q8jaobifXS8uiksyVvys3QR-JZ7zoQotUCVtoQSNV0ux37HEeKG1LUoW9bO4X3HsACx5YCBl79zi7N"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-badge text-label-badge text-on-surface truncate">Resi_MonCash_8942.jpg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px]">Vann: 42 segonn pase</span>
+</div>
+</div>
+<button class="font-label-badge text-label-badge text-primary-container bg-surface-container-high px-2 py-1 rounded hover:bg-surface-bright transition-colors shrink-0 flex items-center gap-1" onclick="openProofModal('https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&amp;auto=format&amp;fit=crop')" type="button">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+<span>Wè Resi</span>
+</button>
+</div>
+<!-- Action Operational Row -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<button class="verify-btn min-h-[40px] px-1 py-1 rounded bg-surface-container-highest text-primary font-label-badge text-label-badge font-bold flex items-center justify-center gap-1 hover:bg-primary hover:text-on-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="truncate">Verifye</span>
+</button>
+<button class="complete-btn min-h-[40px] px-1 py-1 rounded bg-primary-container text-on-primary font-label-badge text-label-badge font-bold flex items-center justify-center gap-1 shadow-sm hover:opacity-90 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="truncate">Fini (Livwe)</span>
+</button>
+<button class="reject-btn min-h-[40px] px-1 py-1 rounded bg-surface-container-highest text-error font-label-badge text-label-badge font-bold flex items-center justify-center gap-1 hover:bg-error-container hover:text-on-error-container transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span class="truncate">Rejte</span>
+</button>
+</div>
+</div>
+<!-- Order Item Card 2: Merù Virtual Card Service / NatCash -->
+<div class="order-card bg-surface-container p-space-sm rounded-xl shadow-md flex flex-col space-y-2 relative" data-order-status="verifying">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-code text-label-code text-primary font-bold">#MKT-8941</span>
+<span class="bg-surface-container-highest text-primary-container font-label-badge text-label-badge text-[10px] px-1.5 py-0.5 rounded">Nan Verifikasyon</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-0.5">14:15:22 • Jodi a</span>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm text-secondary font-bold">1,850 HTG</div>
+<span class="font-label-badge text-label-badge text-secondary-container text-[11px]">Kat Merù Kreyasyon</span>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded-lg grid grid-cols-2 gap-2 text-left">
+<div>
+<span class="font-label-code text-label-code text-on-surface-variant block text-[10px]">KLISYÈ TELEFÒN</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold block">+509 3812-9904</span>
+</div>
+<div>
+<span class="font-label-code text-label-code text-on-surface-variant block text-[10px]">NATCASH TXID</span>
+<span class="font-label-code text-label-code text-primary font-semibold block truncate">NC-481902</span>
+</div>
+</div>
+<!-- Verification Status Feedback -->
+<div class="flex items-center justify-between text-body-sm text-body-sm text-on-surface-variant bg-surface-container-lowest px-2 py-1.5 rounded-lg">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary-container">info</span>
+<span>NatCash API Repons: Valide</span>
+</span>
+<span class="font-label-code text-label-code text-primary-container text-[11px]">Auto-Match 100%</span>
+</div>
+<!-- Action Operational Row -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="complete-btn min-h-[40px] px-2 py-1 rounded bg-secondary-container text-on-secondary font-label-badge text-label-badge font-bold flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Jenere Kat &amp; Livwe</span>
+</button>
+<button class="reject-btn min-h-[40px] px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-badge text-label-badge font-medium flex items-center justify-center gap-1 hover:text-error" type="button">
+<span class="material-symbols-outlined text-[16px]">pause_circle</span>
+<span>Mete an Retni</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product & Price Management Panel (Jesyon Pri & Pwodui) -->
+<div class="flex flex-col space-y-space-xs pt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Jesyon Pri &amp; Katalòg</h3>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant">4 Pake Aktif</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl space-y-3 shadow-md">
+<!-- Diamond Pricing Row Editor -->
+<div class="flex flex-col space-y-2">
+<span class="font-label-badge text-label-badge text-primary-container uppercase">Pake Dyaman Free Fire (Pri HTG)</span>
+<div class="grid grid-cols-2 gap-2">
+<!-- 100 Diamonds Control -->
+<div class="bg-surface-container-high p-2 rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-on-surface">100 Dyaman</span>
+<span class="material-symbols-outlined text-[14px] text-primary-container">diamond</span>
+</div>
+<div class="flex items-center justify-between mt-2">
+<input class="w-16 bg-surface-container-lowest text-primary font-label-code text-label-code px-1.5 py-1 rounded focus:outline-none focus:text-primary-container" type="number" value="150"/>
+<button class="bg-primary-container text-on-primary font-label-badge text-label-badge px-2 py-1 rounded font-bold hover:opacity-90" onclick="notifyUpdate('100 Dyaman modifye')" type="button">
+                Sove
+              </button>
+</div>
+</div>
+<!-- 310 Diamonds Control -->
+<div class="bg-surface-container-high p-2 rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-on-surface">310 Dyaman</span>
+<span class="material-symbols-outlined text-[14px] text-primary-container">diamond</span>
+</div>
+<div class="flex items-center justify-between mt-2">
+<input class="w-16 bg-surface-container-lowest text-primary font-label-code text-label-code px-1.5 py-1 rounded focus:outline-none focus:text-primary-container" type="number" value="450"/>
+<button class="bg-primary-container text-on-primary font-label-badge text-label-badge px-2 py-1 rounded font-bold hover:opacity-90" onclick="notifyUpdate('310 Dyaman modifye')" type="button">
+                Sove
+              </button>
+</div>
+</div>
+<!-- 530 Diamonds Control -->
+<div class="bg-surface-container-high p-2 rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-on-surface">530 Dyaman</span>
+<span class="material-symbols-outlined text-[14px] text-secondary-container">stars</span>
+</div>
+<div class="flex items-center justify-between mt-2">
+<input class="w-16 bg-surface-container-lowest text-secondary font-label-code text-label-code px-1.5 py-1 rounded focus:outline-none focus:text-secondary-container" type="number" value="750"/>
+<button class="bg-secondary-container text-on-secondary font-label-badge text-label-badge px-2 py-1 rounded font-bold hover:opacity-90" onclick="notifyUpdate('530 Dyaman modifye')" type="button">
+                Sove
+              </button>
+</div>
+</div>
+<!-- 1080 Diamonds Control -->
+<div class="bg-surface-container-high p-2 rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-on-surface">1080 Dyaman</span>
+<span class="material-symbols-outlined text-[14px] text-secondary-container">stars</span>
+</div>
+<div class="flex items-center justify-between mt-2">
+<input class="w-16 bg-surface-container-lowest text-secondary font-label-code text-label-code px-1.5 py-1 rounded focus:outline-none focus:text-secondary-container" type="number" value="1500"/>
+<button class="bg-secondary-container text-on-secondary font-label-badge text-label-badge px-2 py-1 rounded font-bold hover:opacity-90" onclick="notifyUpdate('1080 Dyaman modifye')" type="button">
+                Sove
+              </button>
+</div>
+</div>
+</div>
+<button class="w-full min-h-[44px] flex items-center justify-center gap-1.5 bg-surface-container-highest text-primary-container rounded-lg font-label-badge text-label-badge font-bold hover:bg-surface-bright transition-colors mt-1" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Ajoute Nouvo Pake Dyaman</span>
+</button>
+</div>
+<!-- Extra Service Controls: Netflix & Meru Code Stock -->
+<div class="border-t-0 pt-2 flex flex-col space-y-2">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase">Envantè &amp; Sèvis Plis</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-on-surface">Pwofil Netflix</span>
+<span class="font-body-sm text-body-sm text-primary-container text-[11px]">8 Disponib</span>
+</div>
+<button class="bg-surface-container-high text-on-surface-variant p-1.5 rounded hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-on-surface">Kòd Kat Merù</span>
+<span class="font-body-sm text-body-sm text-secondary-container text-[11px]">14 Disponib</span>
+</div>
+<button class="bg-surface-container-high text-on-surface-variant p-1.5 rounded hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">pin</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Broadcast Announcement Banner Manager -->
+<div class="bg-surface-container p-space-sm rounded-xl space-y-2 shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">campaign</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold text-[15px]">Mesaj Anons sou Akèy</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-8 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="flex gap-2">
+<input class="flex-1 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-2.5 py-2 rounded-lg focus:outline-none focus:text-primary" type="text" value="Flash Promo: +15% Dyaman gratis sou tout transfè MonCash jodi a!"/>
+<button class="bg-primary-container text-on-primary font-label-badge text-label-badge px-3 py-2 rounded-lg font-bold hover:opacity-90 shrink-0" onclick="notifyUpdate('Anons lan mete ajou')" type="button">
+        Pibliye
+      </button>
+</div>
+</div>
+<!-- System Security Credentials Card -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl flex items-start gap-space-xs shadow-inner">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0 mt-0.5">lock_clock</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-badge text-label-badge text-on-surface">Protokòl Sekirite Administrasyon</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-relaxed mt-0.5">
+        Sesyon admin sa a ankripte ak AES-256. Pa janm pataje lyen sa a oswa ekspoze kòd aksè nan kòd piblik. Tout modifikasyon pri ak verifikasyon resi anrejistre otomatikman nan baz done odi a.
+      </p>
+</div>
+</div>
+<!-- Floating Toast Notification System (Hidden by default) -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 bg-surface-bright text-primary-container font-label-badge text-label-badge px-4 py-2 rounded-full shadow-2xl transition-all duration-300 opacity-0 pointer-events-none z-50 flex items-center gap-2" id="adminToast">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span id="toastMsg">Chanjman anrejistre avèk siksè!</span>
+</div>
+<!-- Image Receipt Preview Modal -->
+<div class="fixed inset-0 bg-background/90 backdrop-blur-md z-50 hidden flex-col items-center justify-center p-4" id="receiptModal">
+<div class="bg-surface-container p-4 rounded-2xl max-w-sm w-full space-y-3 relative shadow-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">receipt_long</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold text-[15px]">Resi Peman Kliyan</span>
+</div>
+<button class="text-on-surface-variant hover:text-error" onclick="closeProofModal()" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-72 object-contain" data-alt="A smartphone screen displaying an authentic Digicel MonCash Haiti SMS payment confirmation voucher with 750 HTG and reference transaction code MC-9028471 in a clean dark modern mobile interface" id="modalReceiptImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-6aXAbnf0AHmJIVamzbTK9MpNZwoA0R1XVhLLcuNEMFzu0WLa6V7BagekqeEmhadAlg5aW8W3Q7rJpzukvfOlq2pYmlGwQnwW3O9C9QCV3n3nQZiDaZ2Ln37aArmXhcFWTIxeCOwQeed11x0HRcgi4D2fjIA_5lAF9yRR4obyKzcqVL15Ufc0ZrrlolzBMo0k0dXiOdtxR0NlZfypY0wfPlODjHfqfMT6Rj6RB7yP"/>
+</div>
+<div class="flex items-center justify-between text-body-sm text-body-sm text-on-surface-variant">
+<span class="font-label-code text-label-code">#MC-9028471</span>
+<span class="text-primary-container font-semibold">Validite Konfime</span>
+</div>
+<button class="w-full bg-primary-container text-on-primary font-label-badge text-label-badge py-2.5 rounded-lg font-bold" onclick="closeProofModal()" type="button">
+        Fèmen Fenèt
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Toast Helper
+  function notifyUpdate(message) {
+    const toast = document.getElementById('adminToast');
+    const toastMsg = document.getElementById('toastMsg');
+    if (!toast || !toastMsg) return;
+    toastMsg.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }, 2400);
+  }
+
+  // Modal View
+  function openProofModal() {
+    const modal = document.getElementById('receiptModal');
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function closeProofModal() {
+    const modal = document.getElementById('receiptModal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  // Interactive Filter Toggles
+  document.querySelectorAll('.filter-chip').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.filter-chip').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+        b.classList.add('bg-surface-container-high', 'text-on-surface-variant', 'font-medium');
+      });
+      button.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+      button.classList.remove('bg-surface-container-high', 'text-on-surface-variant', 'font-medium');
+      notifyUpdate('Filtre: ' + button.textContent.trim());
+    });
+  });
+
+  // Action Buttons Feedback
+  document.querySelectorAll('.verify-btn').forEach(btn => {
+    btn.addEventListener('click', () => notifyUpdate('Peman verifye kòm VALID!'));
+  });
+
+  document.querySelectorAll('.complete-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = e.target.closest('.order-card');
+      notifyUpdate('Kòmand livwe! Kliyan an resevwa notifikasyon SMS.');
+      if (card) {
+        card.style.opacity = '0.5';
+      }
+    });
+  });
+
+  document.querySelectorAll('.reject-btn').forEach(btn => {
+    btn.addEventListener('click', () => notifyUpdate('Kòmand mete an atant rejè.'));
+  });
+
+  const refreshBtn = document.getElementById('refreshQueueBtn');
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', () => {
+      notifyUpdate('Lis kòmand rafrechi (Done senkronize)');
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-8px_24px_rgba(0,0,0,0.7)]" data-active-classes="text-primary-container font-bold [&amp;_span.material-symbols-outlined]:drop-shadow-[0_0_12px_rgba(0,229,255,0.85)] [&amp;_span.nav-indicator]:opacity-100"><div class="h-20 max-w-md mx-auto px-1 flex items-center justify-between"><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="home-free-fire" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">sports_esports</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Akèy</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="diamond-store" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">diamond</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Pake Dyaman</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="extra-services" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">grid_view</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Sèvis Plis</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="order-tracking" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">receipt_long</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Kòmand Mwen</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a aria-current="page" class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center transition-colors text-primary-container font-bold [&amp;_span.material-symbols-outlined]:drop-shadow-[0_0_12px_rgba(0,229,255,0.85)] [&amp;_span.nav-indicator]:opacity-100" data-path="admin-dashboard" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">shield_person</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Admin</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a></div></nav></body></html>

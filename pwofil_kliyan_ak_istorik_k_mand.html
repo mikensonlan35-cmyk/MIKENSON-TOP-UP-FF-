@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ht"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&amp;family=Sora:wght@600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#10131a;}body{overscroll-behavior-y:none;font-family:'Space Grotesk',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary": "#00363d", "error": "#ffb4ab", "surface-dim": "#10131a", "background": "#10131a", "on-tertiary-fixed-variant": "#004395", "on-tertiary": "#002e6a", "tertiary-container": "#bdd0ff", "inverse-primary": "#006875", "tertiary-fixed-dim": "#aec6ff", "secondary-container": "#feb700", "primary-fixed-dim": "#00daf3", "surface-container-low": "#191c22", "surface-tint": "#00daf3", "error-container": "#93000a", "tertiary": "#e7ecff", "on-primary-fixed": "#001f24", "inverse-on-surface": "#2e3037", "inverse-surface": "#e1e2eb", "on-secondary-fixed-variant": "#5e4200", "on-tertiary-fixed": "#001a42", "on-surface-variant": "#bac9cc", "primary": "#c3f5ff", "surface-container-lowest": "#0b0e14", "surface": "#10131a", "surface-container-highest": "#32353c", "outline": "#849396", "surface-container": "#1d2026", "secondary-fixed": "#ffdea8", "on-secondary": "#412d00", "surface-bright": "#363940", "on-error": "#690005", "on-secondary-container": "#6b4b00", "surface-container-high": "#272a31", "secondary-fixed-dim": "#ffba20", "on-primary-container": "#00626e", "on-secondary-fixed": "#271900", "on-surface": "#e1e2eb", "outline-variant": "#3b494c", "secondary": "#ffdb9d", "primary-fixed": "#9cf0ff", "tertiary-fixed": "#d8e2ff", "on-background": "#e1e2eb", "on-primary-fixed-variant": "#004f58", "surface-variant": "#32353c", "on-error-container": "#ffdad6", "primary-container": "#00e5ff", "on-tertiary-container": "#0055b8" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.5rem", "space-xl": "2rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xs": "0.25rem" }, fontFamily: { "headline-md": ["Sora"], "label-code": ["JetBrains Mono"], "label-badge": ["Sora"], "headline-lg": ["Sora"], "label-numeric": ["JetBrains Mono"], "display-hero": ["Sora"], "headline-sm": ["Sora"], "body-md": ["Space Grotesk"], "body-lg": ["Space Grotesk"], "display-hero-mobile": ["Sora"], "body-sm": ["Space Grotesk"] }, fontSize: { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "label-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-hero-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><img alt="Mikenson Top Up FF Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI-txL9QgwxWoWpdQKgm3wwBd69pVmli2X_dslH2H0ifQHXPK25LTdbPVMTeos_JZoFuhWg5iL6SpaMfeRsjOlaTlxqd1qsL_0Tpx0HKto7ZKJeCpfsQmP3ztaeAYZmaf0LfvEvRRgUaU4Nt11Vl1WnllYOgU82apXNwqnOM49sV2AvkT7zJaUFUciRI_rhQz0y3Rzn9cXfqwf8y7XoRgNkyzyXHpH63RIgYwaDRUK"/><div class="flex flex-col min-w-0 justify-center"><div class="flex items-center gap-1 min-w-0"><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight truncate leading-none drop-shadow-[0_0_10px_rgba(0,229,255,0.4)]">MIKENSON</span><span class="font-headline-sm text-headline-sm text-secondary-container tracking-tight shrink-0 leading-none">FF</span></div><span class="font-label-badge text-label-badge text-on-surface-variant truncate tracking-wider leading-none mt-0.5">Home Free Fire</span></div></div><div class="flex items-center gap-1.5 shrink-0"><a aria-label="WhatsApp Support" class="min-h-[44px] min-w-[44px] p-2 flex items-center justify-center rounded-xl bg-surface-container-high/90 text-primary-container hover:text-primary transition-colors" href="https://wa.me/50955110880" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)]">chat</span></a><div class="inline-flex items-center bg-surface-container-high p-0.5 rounded-lg"><button class="min-h-[44px] px-2 flex items-center justify-center font-label-badge text-label-badge rounded-lg bg-primary-container text-on-primary font-bold shadow-[0_0_8px_rgba(0,229,255,0.4)] transition-all" type="button">HT</button><button class="min-h-[44px] px-2 flex items-center justify-center font-label-badge text-label-badge rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">FR</button></div><a aria-label="Itilizatè Pwofil" class="min-h-[44px] min-w-[44px] p-1 flex items-center justify-center rounded-full" data-path="admin-dashboard" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_10px_rgba(0,229,255,0.35)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6nB4ZY7b8EXQ6fnoeM0-UVt4NlxK4VXGDYIJkqnkM3ZAtS_LrGOlJyvZDCGTFny_TKZF3TfW3iUzF-X12vrw_XN8Q3ylX-eUuFtRlMXqmawf9khlg0wIYqz9OW7iJrhos8iDjXkrncXBnZ-9SC4Pn7bwSg4AbFB9cBjQfLa8B3s5Z4AgdT0849DN5Bo6n5F-vmFbUDDl3lEcatedX6kuo0IJldb1uS6dQ641SwXV1"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface max-w-md mx-auto"><div class="flex flex-col w-full px-gutter-mobile space-y-space-md pb-6">
+<!-- Toast Notification Dynamic Feedback -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-xl bg-surface-container-highest/95 backdrop-blur-md shadow-xl text-primary-container font-label-badge text-label-badge flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300" id="toastNotification">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span id="toastMsg">Tèks kopye avèk siksè!</span>
+</div>
+<!-- Profile Identity & VIP Card -->
+<section class="relative w-full rounded-2xl bg-surface-container-low p-4 shadow-xl overflow-hidden">
+<!-- Ambient Cyan Glow -->
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-primary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-32 h-32 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col space-y-3.5">
+<!-- Player Header Row -->
+<div class="flex items-center gap-3.5">
+<!-- Gamer Avatar with Electric Neon Aura -->
+<div class="relative shrink-0">
+<div class="w-16 h-16 rounded-2xl overflow-hidden bg-surface-container-highest shadow-[0_0_16px_rgba(0,229,255,0.35)]">
+<img class="w-full h-full object-cover" data-alt="Futuristic cyber esports anime gamer portrait with white-silver hair and a sleek combat half mask, glowing electric cyan accents on jacket, deep dark midnight backdrop with subtle golden sparkles matching Free Fire champion aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCazY2XMSyEHWTPueiEwJ7Jw7ScJSEowJFs_uWWJuc3zcgz-C-lObPSIW_uvlUSe4hTFTHcXlXc3Seyy8HG9MtFoVhsZCJaFQ0MKLyljk8qEW7qNEf3kR-LmA1q8GpbYhABNtoqGZW-InLDgdXXfBBEQmxc-Oj4MA2MDy3ItNbaST_XOuDvXo6TMh9mcKtpT_pDT2RV8QFWdCKcc2wyO3MyzePigu2017CNyDyqImD0"/>
+</div>
+<span class="absolute -bottom-1.5 -right-1 px-1.5 py-0.5 rounded-md bg-secondary-container text-on-secondary font-headline-sm text-[10px] uppercase font-bold tracking-tight shadow-[0_0_8px_rgba(254,183,0,0.6)]">
+            LVL 2
+          </span>
+</div>
+<!-- Name & Metadata -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Jean-Marc Baptiste</h1>
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0" title="Kliyan Verifye">verified</span>
+</div>
+<p class="font-label-badge text-label-badge text-secondary-container truncate mt-0.5 tracking-wide">
+            ⚡ JMB_SNIPER ⚡
+          </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-code text-label-code text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary-container">phone_iphone</span>
+              +509 4812-3456
+            </span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-label-badge text-[10px]">
+              Verifye
+            </span>
+</div>
+</div>
+</div>
+<!-- Free Fire Quick-Action UID Strip -->
+<div class="flex items-center justify-between bg-surface-container rounded-xl px-3 py-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary-container text-[18px]">sports_esports</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-badge text-[9px] uppercase tracking-wider text-on-surface-variant">UID Free Fire Prensipal</span>
+<span class="font-label-numeric text-label-numeric text-on-surface font-bold tracking-wider" id="playerUidText">2849104829</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="min-h-[36px] px-2.5 rounded-lg bg-surface-container-high text-primary hover:text-on-primary hover:bg-primary-container transition-all flex items-center gap-1 font-label-badge text-label-badge active:scale-95" onclick="copyToClipboard('2849104829', 'UID Free Fire kopye!')" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Kopye</span>
+</button>
+</div>
+</div>
+<!-- Mini-Stats Gaming Tiles -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<!-- Tile 1 -->
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container text-center">
+<span class="font-label-badge text-[10px] text-on-surface-variant uppercase">Kòmand</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">14</span>
+<span class="font-label-code text-[10px] text-primary-container">Livrezon</span>
+</div>
+<!-- Tile 2 -->
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container text-center">
+<span class="font-label-badge text-[10px] text-on-surface-variant uppercase">Dyaman</span>
+<span class="font-headline-sm text-headline-sm text-secondary-container mt-0.5">12.4K</span>
+<span class="font-label-code text-[10px] text-secondary">Total Achte</span>
+</div>
+<!-- Tile 3 -->
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container text-center">
+<span class="font-label-badge text-[10px] text-on-surface-variant uppercase">Pwen VIP</span>
+<span class="font-headline-sm text-headline-sm text-primary-container mt-0.5">350</span>
+<span class="font-label-code text-[10px] text-on-surface-variant">100 HTG Bonis</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Tactical Actions Strip -->
+<div class="grid grid-cols-2 gap-2.5">
+<button class="min-h-[48px] px-3 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all flex items-center justify-center gap-2 active:scale-95" onclick="openAddUidModal()" type="button">
+<span class="material-symbols-outlined text-primary-container text-[20px]">person_add</span>
+<span class="font-label-badge text-label-badge tracking-tight">Ajoute / Modifye UID</span>
+</button>
+<button class="min-h-[48px] px-3 rounded-xl bg-secondary-container text-on-secondary hover:bg-secondary-fixed-dim transition-all flex items-center justify-center gap-2 active:scale-95 shadow-[0_0_12px_rgba(254,183,0,0.3)]" onclick="copyToClipboard('MIKENSON-VIP-BONUS', 'Kòd Bonis kopye!')" type="button">
+<span class="material-symbols-outlined text-[20px]">redeem</span>
+<span class="font-label-badge text-label-badge font-bold">Kòd Bonis Kado</span>
+</button>
+</div>
+<!-- Order History Main Section -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">history</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Istorik Kòmand</h2>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">14 Total</span>
+</div>
+<!-- Filter Tabs (Creole) -->
+<div class="flex items-center gap-1.5 p-1 rounded-xl bg-surface-container overflow-x-auto no-scrollbar">
+<button class="order-tab active-tab flex-1 min-h-[36px] px-3 rounded-lg bg-primary-container text-on-primary font-label-badge text-label-badge font-bold tracking-tight whitespace-nowrap transition-all shadow-[0_0_8px_rgba(0,229,255,0.35)]" onclick="filterOrders('all', this)" type="button">
+        Tout (14)
+      </button>
+<button class="order-tab flex-1 min-h-[36px] px-3 rounded-lg bg-transparent text-on-surface-variant hover:text-on-surface font-label-badge text-label-badge tracking-tight whitespace-nowrap transition-all" onclick="filterOrders('pending', this)" type="button">
+        Ankou (1)
+      </button>
+<button class="order-tab flex-1 min-h-[36px] px-3 rounded-lg bg-transparent text-on-surface-variant hover:text-on-surface font-label-badge text-label-badge tracking-tight whitespace-nowrap transition-all" onclick="filterOrders('completed', this)" type="button">
+        Konplete (12)
+      </button>
+<button class="order-tab flex-1 min-h-[36px] px-3 rounded-lg bg-transparent text-on-surface-variant hover:text-on-surface font-label-badge text-label-badge tracking-tight whitespace-nowrap transition-all" onclick="filterOrders('waiting', this)" type="button">
+        An Atant (1)
+      </button>
+</div>
+<!-- Order Items Container -->
+<div class="flex flex-col space-y-3" id="ordersContainer">
+<!-- Order 1: In Progress / Free Fire Diamonds -->
+<article class="order-card rounded-2xl bg-surface-container-low p-4 shadow-lg flex flex-col space-y-3 relative overflow-hidden" data-status="pending">
+<!-- Ambient Status Light Strip -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary-container via-primary-container to-secondary-container animate-pulse"></div>
+<div class="flex items-start justify-between gap-2 pt-1">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-primary-container shadow-[0_0_12px_rgba(0,229,255,0.2)]">
+<span class="material-symbols-outlined text-[24px]">diamond</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-[15px] leading-tight text-on-surface truncate">1,080 + 108 Dyaman FF</h3>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-0.5">Jodi a, 14:22 • UID: 2849104829</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-numeric text-label-numeric font-bold text-primary-container">1,250 HTG</span>
+<span class="font-label-badge text-[10px] text-on-surface-variant">MonCash</span>
+</div>
+</div>
+<!-- Status & Delivery Pulse Tag -->
+<div class="flex items-center justify-between bg-surface-container rounded-xl p-2.5">
+<div class="flex items-center gap-2 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-badge text-label-badge text-secondary-container truncate">Livrezon Ankou (2-5 min)</span>
+</div>
+<span class="font-label-code text-[11px] text-on-surface-variant">Tx: MC-98341920</span>
+</div>
+<!-- Action Triggers -->
+<div class="grid grid-cols-2 gap-2 pt-0.5">
+<a class="min-h-[44px] px-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary-container flex items-center justify-center gap-1.5 transition-colors font-label-badge text-[11px]" href="https://wa.me/50955110880?text=Bonjou%20Mikenson,%20mwen%20vle%20swiv%20kòmand%20MC-98341920" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Swiv sou WhatsApp</span>
+</a>
+<button class="min-h-[44px] px-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center gap-1.5 transition-colors font-label-badge text-[11px]" onclick="showReceiptModal('MC-98341920', '1,080 + 108 Dyaman Free Fire', '1,250 HTG', 'Livrezon Ankou', 'MonCash')" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+<span>Wè Resi</span>
+</button>
+</div>
+</article>
+<!-- Order 2: Completed / Meru Virtual Card -->
+<article class="order-card rounded-2xl bg-surface-container-low p-4 shadow-lg flex flex-col space-y-3" data-status="completed">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-secondary-container">
+<span class="material-symbols-outlined text-[24px]">credit_card</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-[15px] leading-tight text-on-surface truncate">Kat Merù 25$ USD</h3>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-0.5">Yè, 18:05 • Rechaj Entènasyonal</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">3,400 HTG</span>
+<span class="font-label-badge text-[10px] text-secondary-container">NatCash</span>
+</div>
+</div>
+<!-- Meru Card PIN / Code Box -->
+<div class="bg-surface-container rounded-xl p-2.5 flex items-center justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<span class="font-label-badge text-[9px] uppercase text-on-surface-variant tracking-wider">Kòd PIN Kat Merù</span>
+<span class="font-label-code text-[12px] text-primary-container font-bold tracking-wider truncate">MERU-8923-XXXX-4412</span>
+</div>
+<button class="min-h-[38px] px-3 rounded-lg bg-surface-container-highest text-primary hover:bg-primary-container hover:text-on-primary transition-all flex items-center gap-1 font-label-badge text-[11px]" onclick="copyToClipboard('MERU-8923-7741-4412', 'Kòd Kat Merù kopye!')" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Kopye Kòd</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-0.5">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-badge text-label-badge">Livrezon Konplete</span>
+</div>
+<span class="font-label-code text-[11px] text-on-surface-variant">Tx: NC-5521940</span>
+</div>
+</article>
+<!-- Order 3: Completed / Booyah Pass -->
+<article class="order-card rounded-2xl bg-surface-container-low p-4 shadow-lg flex flex-col space-y-2.5" data-status="completed">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[24px]">military_tech</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-[15px] leading-tight text-on-surface truncate">Pas Elit Free Fire (Booyah)</h3>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-0.5">28 Janvye 2025 • UID: 2849104829</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">650 HTG</span>
+<span class="font-label-badge text-[10px] text-on-surface-variant">MonCash</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-badge text-label-badge">Livrezon Konplete</span>
+</div>
+<button class="min-h-[36px] px-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-badge text-[11px] flex items-center gap-1" onclick="showReceiptModal('MC-81203941', 'Pas Elit Booyah Free Fire', '650 HTG', 'Konplete', 'MonCash')" type="button">
+<span class="material-symbols-outlined text-[14px]">receipt_long</span>
+<span>Resi</span>
+</button>
+</div>
+</article>
+<!-- Order 4: Completed / Netflix Subscription -->
+<article class="order-card rounded-2xl bg-surface-container-low p-4 shadow-lg flex flex-col space-y-2.5" data-status="completed">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-error">
+<span class="material-symbols-outlined text-[24px]">movie</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-[15px] leading-tight text-on-surface truncate">Netflix 1 Mwa (1 Ekran UHD)</h3>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-0.5">15 Janvye 2025 • Profil Sekirize</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">950 HTG</span>
+<span class="font-label-badge text-[10px] text-secondary-container">NatCash</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-badge text-label-badge">Livrezon Konplete</span>
+</div>
+<button class="min-h-[36px] px-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-badge text-[11px] flex items-center gap-1" onclick="showReceiptModal('NC-4410928', 'Netflix Profil 1 Mwa UHD', '950 HTG', 'Konplete', 'NatCash')" type="button">
+<span class="material-symbols-outlined text-[14px]">receipt_long</span>
+<span>Resi</span>
+</button>
+</div>
+</article>
+<!-- Order 5: Waiting / NatCash Validation (Hidden initially by tab or available for filter) -->
+<article class="order-card rounded-2xl bg-surface-container-low p-4 shadow-lg flex flex-col space-y-2.5" data-status="waiting">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-[24px]">hourglass_top</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-[15px] leading-tight text-on-surface truncate">520 Dyaman Free Fire</h3>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-0.5">27 Desanm 2024 • UID: 2849104829</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">590 HTG</span>
+<span class="font-label-badge text-[10px] text-secondary-container">NatCash</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-label-badge text-label-badge">Validasyon Peman</span>
+</div>
+<span class="font-label-code text-[11px] text-on-surface-variant">Tx: NC-Pending</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Security & Account Settings Panel -->
+<section class="flex flex-col space-y-3 pt-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Paramèt &amp; Sekirite</h2>
+</div>
+<div class="rounded-2xl bg-surface-container-low p-3.5 space-y-3">
+<!-- Toggle: Instant WhatsApp / SMS Notification -->
+<div class="flex items-center justify-between gap-3 py-1">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-on-surface font-semibold text-[13px] leading-tight">Alèt WhatsApp Lè Dyaman Livre</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Resevwa konfimasyon imedyat sou telefòn ou</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="smsAlertToggle" onchange="toggleNotificationAlert(this)" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Action: Change Password -->
+<button class="w-full min-h-[48px] px-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between text-left" onclick="openChangePassModal()" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-on-surface font-semibold text-[13px]">Chanje Modpas Kont</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Ranfòse sekirite acha w yo</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</button>
+<!-- Action: Dedicated WhatsApp Support Link -->
+<a class="w-full min-h-[48px] px-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between text-left" href="https://wa.me/50955110880" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-on-surface font-semibold text-[13px]">Asistans Dirèk Mikenson</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">WhatsApp: +509 5511-0880 (24/7)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-container text-[20px]">open_in_new</span>
+</a>
+<!-- Action: Logout -->
+<button class="w-full min-h-[46px] px-3 rounded-xl bg-surface-container hover:bg-error-container/40 text-error transition-colors flex items-center justify-center gap-2" onclick="triggerLogout()" type="button">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span class="font-label-badge text-label-badge font-bold">Dekonekte Kont Mwen</span>
+</button>
+</div>
+</section>
+<!-- Modal 1: Receipt Bottom Sheet Dialog -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md flex items-end justify-center p-3 opacity-0 pointer-events-none transition-opacity duration-300" id="receiptModal">
+<div class="w-full max-w-md bg-surface-container-low rounded-2xl p-5 space-y-4 shadow-2xl relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[24px]">receipt_long</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Resi Tranzaksyon</h3>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeReceiptModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container rounded-xl p-3.5 space-y-2.5 text-[13px]">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Kòd Tranzaksyon:</span>
+<span class="font-label-code text-on-surface font-bold" id="receiptTxId">MC-00000000</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Pwodui:</span>
+<span class="text-on-surface font-semibold truncate max-w-[200px]" id="receiptProduct">Pake Dyaman</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Metòd Peman:</span>
+<span class="text-secondary-container font-semibold" id="receiptPayment">MonCash</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Estati:</span>
+<span class="text-primary font-bold" id="receiptStatus">Livrezon Fèt</span>
+</div>
+<div class="pt-2 flex justify-between items-center font-headline-sm text-[16px] text-on-surface">
+<span>Total Peye:</span>
+<span class="text-primary-container font-bold" id="receiptTotal">0 HTG</span>
+</div>
+</div>
+<button class="w-full min-h-[48px] rounded-xl bg-primary-container text-on-primary font-headline-sm text-[14px] font-bold flex items-center justify-center gap-2 shadow-[0_0_14px_rgba(0,229,255,0.4)] active:scale-95 transition-all" onclick="copyReceiptDetails()" type="button">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+<span>Kopye Enfòmasyon Resi Sa</span>
+</button>
+</div>
+</div>
+<!-- Modal 2: Add/Edit Free Fire UID Dialog -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300" id="uidModal">
+<div class="w-full max-w-sm bg-surface-container-low rounded-2xl p-5 space-y-4 shadow-2xl relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[24px]">sports_esports</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Jesyon UID FF</h3>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeAddUidModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Mete nouvo UID jwè Free Fire ou a pou tout komisyon dyaman fèt otomatikman san erè.
+      </p>
+<div class="space-y-2">
+<label class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider" for="newUidInput">Nouvo UID Jwè</label>
+<div class="relative">
+<input class="w-full h-12 bg-surface-container rounded-xl px-4 font-label-numeric text-label-numeric text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-colors" id="newUidInput" placeholder="Ex: 2849104829" type="number"/>
+</div>
+</div>
+<div class="flex gap-2 pt-1">
+<button class="flex-1 min-h-[44px] rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface font-label-badge text-label-badge" onclick="closeAddUidModal()" type="button">
+          Anile
+        </button>
+<button class="flex-1 min-h-[44px] rounded-xl bg-primary-container text-on-primary font-label-badge text-label-badge font-bold shadow-[0_0_10px_rgba(0,229,255,0.4)]" onclick="saveNewUid()" type="button">
+          Anrejistre
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMsg');
+    if (!toast || !msg) return;
+    msg.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none');
+      toast.classList.remove('opacity-100');
+    }, 2400);
+  }
+
+  function copyToClipboard(text, successMsg) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(successMsg || 'Kopye!');
+      }).catch(() => {
+        showToast('Kopye: ' + text);
+      });
+    } else {
+      showToast('Kopye: ' + text);
+    }
+  }
+
+  function filterOrders(filter, triggerBtn) {
+    // Tab indicator update
+    const tabs = document.querySelectorAll('.order-tab');
+    tabs.forEach(tab => {
+      tab.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold', 'shadow-[0_0_8px_rgba(0,229,255,0.35)]');
+      tab.classList.add('bg-transparent', 'text-on-surface-variant');
+    });
+
+    triggerBtn.classList.remove('bg-transparent', 'text-on-surface-variant');
+    triggerBtn.classList.add('bg-primary-container', 'text-on-primary', 'font-bold', 'shadow-[0_0_8px_rgba(0,229,255,0.35)]');
+
+    // Cards filtering
+    const cards = document.querySelectorAll('.order-card');
+    cards.forEach(card => {
+      const status = card.getAttribute('data-status');
+      if (filter === 'all' || status === filter) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function showReceiptModal(txId, product, total, status, payment) {
+    document.getElementById('receiptTxId').innerText = txId;
+    document.getElementById('receiptProduct').innerText = product;
+    document.getElementById('receiptTotal').innerText = total;
+    document.getElementById('receiptStatus').innerText = status;
+    document.getElementById('receiptPayment').innerText = payment;
+
+    const modal = document.getElementById('receiptModal');
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+  }
+
+  function closeReceiptModal() {
+    const modal = document.getElementById('receiptModal');
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+  }
+
+  function copyReceiptDetails() {
+    const tx = document.getElementById('receiptTxId').innerText;
+    const prod = document.getElementById('receiptProduct').innerText;
+    const tot = document.getElementById('receiptTotal').innerText;
+    copyToClipboard(`MIKENSON TOP UP RESI: ${tx} | ${prod} | ${tot}`, 'Resi kopye avèk siksè!');
+    closeReceiptModal();
+  }
+
+  function openAddUidModal() {
+    const modal = document.getElementById('uidModal');
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+  }
+
+  function closeAddUidModal() {
+    const modal = document.getElementById('uidModal');
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+  }
+
+  function saveNewUid() {
+    const input = document.getElementById('newUidInput');
+    if (input.value && input.value.trim().length >= 8) {
+      document.getElementById('playerUidText').innerText = input.value.trim();
+      showToast('Nouvo UID anrejistre avèk siksè!');
+      closeAddUidModal();
+    } else {
+      showToast('Tanpri mete yon UID valab (omwen 8 chif)');
+    }
+  }
+
+  function openChangePassModal() {
+    showToast('Lyen modpas la voye sou WhatsApp ou!');
+  }
+
+  function toggleNotificationAlert(checkbox) {
+    if (checkbox.checked) {
+      showToast('Notifikasyon WhatsApp aktive!');
+    } else {
+      showToast('Notifikasyon WhatsApp dezaktive!');
+    }
+  }
+
+  function triggerLogout() {
+    showToast('Sesyon an fèmen. Na wè talè!');
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-8px_24px_rgba(0,0,0,0.7)]" data-active-classes="text-primary-container font-bold [&amp;_span.material-symbols-outlined]:drop-shadow-[0_0_12px_rgba(0,229,255,0.85)] [&amp;_span.nav-indicator]:opacity-100"><div class="h-20 max-w-md mx-auto px-1 flex items-center justify-between"><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="home-free-fire" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">sports_esports</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Akèy</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="diamond-store" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">diamond</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Pake Dyaman</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="extra-services" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">grid_view</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Sèvis Plis</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="order-tracking" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">receipt_long</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Kòmand Mwen</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a><a class="group relative flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors" data-path="admin-dashboard" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-active:scale-90">shield_person</span><span class="font-label-badge text-label-badge text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Admin</span><span class="nav-indicator absolute bottom-0.5 w-4 h-0.5 rounded-full bg-primary-container opacity-0 shadow-[0_0_6px_#00e5ff] transition-opacity"></span></a></div></nav></body></html>
